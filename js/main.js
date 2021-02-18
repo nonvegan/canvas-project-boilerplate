@@ -1,4 +1,4 @@
-import { mapValue, restrain, getRandomInt, getMs } from "./helpers.js";
+import { getMs } from "./helpers.js";
 import { Ant, Vector } from "./classes.js";
 
 const canvas = document.getElementById("canvas");
@@ -30,7 +30,7 @@ let ant = new Ant(
 );
 
 let intervalId;
-let stepsFrame = 1;
+let stepsFrame = 10;
 
 function setup() {
   canvas.width = width;
@@ -75,7 +75,7 @@ function update() {
 }
 
 function draw() {
-  ctx.fillRect(width - ant.pos.x, height - ant.pos.y, ant.size.y, ant.size.x);
+  ctx.fillRect(width - ant.pos.x, ant.pos.y, ant.size.y, ant.size.x);
 }
 
 function reset() {
