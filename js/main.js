@@ -1,6 +1,5 @@
 import { mapValue, restrain, getRandomInt, getMs } from "./helpers.js";
 import { Ant, Vector } from "./classes.js";
-import data from "./data.js";
 
 const canvas = document.getElementById("canvas");
 /** @type {CanvasRenderingContext2D} */
